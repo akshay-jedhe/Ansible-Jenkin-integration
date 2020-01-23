@@ -1,2 +1,2 @@
 # Ansible-Jenkin-integration
-enabling Jenkins Pipeline Job using Ansible.
+Authenticating to Jenkins Server with the help of Jenkins AUTH API token and Deleting Jenkins Job.

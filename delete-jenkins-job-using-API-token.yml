@@ -1,11 +1,11 @@
 ---
-- name: enable jenkins pipeline job.
+- name: delete jenkins pipeline job using API auth token
   hosts: Jenkins-Server
   tasks:
-  - name: enable  Jenkins pipeline job.
+  - name: delete Jenkins pipeline job.
     jenkins_job:
        name: Ansible-Jenkins-Pipeline-Job
        user: "{{ lookup('env','JENKINS_USER') }}"
-       password: "{{ lookup('env','JENKINS_PASSWORD') }}"
+       token: "{{ lookup('env','JENKINS_AUTH_TOKEN') }}"
        url: "{{ lookup('env','JENKINS_URL') }}"
-       enabled: yes
+       state: absent
