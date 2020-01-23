@@ -1,2 +1,2 @@
 # Ansible-Jenkin-integration
-disabling Jenkins Pipeline Job using Ansible.
+enabling Jenkins Pipeline Job using Ansible.
