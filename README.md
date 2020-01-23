@@ -1,2 +1,2 @@
 # Ansible-Jenkin-integration
-This is repository only used for managing jenkins using ansible.
+Creating Jenkins Pipeline Job using Ansible.
