@@ -1,12 +1,12 @@
 ---
-- name: create jenkins pipeline job
+- name: delete jenkins pipeline job
   hosts: Jenkins-Server
   tasks:
-  - name: Jenkins pipeline job creation.
+  - name: Jenkins pipeline job deletion.
     jenkins_job:
-       config: "{{ lookup('file', 'templates/config.xml') }}"
        name: Ansible-Jenkins-Pipeline-Job
        user: <Jenkins Username>
+       state: absent
        password: <Jenkins Password>
        url: <Jenkins URL>
 

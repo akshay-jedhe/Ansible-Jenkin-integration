@@ -1,2 +1,2 @@
 # Ansible-Jenkin-integration
-Creating Jenkins Pipeline Job using Ansible.
+deleting Jenkins Pipeline Job using Ansible.
