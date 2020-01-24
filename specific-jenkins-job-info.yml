@@ -1,9 +1,10 @@
 ---
-- name: all jenkins job info.
+- name: test jenkins job info.
   hosts: Jenkins-Server
   tasks:
-  - name: Jenkins pipeline job info.
+  - name: test jenkins pipeline job info.
     jenkins_job_facts:
+        name: test
         user: "{{ lookup('env','JENKINS_USER') }}"
         password: "{{ lookup('env','JENKINS_PASSWORD') }}"
         url: "{{ lookup('env','JENKINS_URL') }}"

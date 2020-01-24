@@ -1,2 +1,2 @@
 # Ansible-Jenkin-integration.
-Getting All the information of currently available jobs in jenkins.
+Getting All the information of Specific  currently available job in jenkins.
