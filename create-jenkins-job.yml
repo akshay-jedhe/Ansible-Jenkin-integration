@@ -1,0 +1,12 @@
+---
+- name: create jenkins pipeline job
+  hosts: Jenkins-Server
+  tasks:
+  - name: Jenkins pipeline job creation.
+    jenkins_job:
+       config: "{{ lookup('file', 'templates/config.xml') }}"
+       name: Ansible-Jenkins-Pipeline-Job
+       user: <JENKINS_USER>
+       password: <JENKINS_PASSWORD>
+       url: <JENKINS_URL>
+

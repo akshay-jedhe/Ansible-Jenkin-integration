@@ -1,0 +1,11 @@
+---
+- name: disable jenkins pipeline job.
+  hosts: Jenkins-Server
+  tasks:
+  - name: Disable Jenkins pipeline job.
+    jenkins_job:
+       name: Ansible-Jenkins-Pipeline-Job
+       user: <JENKINS_USER>
+       password: <JENKINS_PASSWORD>
+       url: <JENKINS_URL>
+       enabled: no

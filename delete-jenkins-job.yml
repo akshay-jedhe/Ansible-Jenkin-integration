@@ -1,0 +1,12 @@
+---
+- name: delete jenkins pipeline job
+  hosts: Jenkins-Server
+  tasks:
+  - name: Jenkins pipeline job deletion.
+    jenkins_job:
+       name: Ansible-Jenkins-Pipeline-Job
+       user: <JENKINS_USER>
+       state: absent
+       password: <JENKINS_PASSWORD>
+       url: <JENKINS_URL>
+

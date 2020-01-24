@@ -1,0 +1,11 @@
+---
+- name: enable jenkins pipeline job.
+  hosts: Jenkins-Server
+  tasks:
+  - name: enable  Jenkins pipeline job.
+    jenkins_job:
+       name: Ansible-Jenkins-Pipeline-Job
+       user: "{{ lookup('env','JENKINS_USER') }}"
+       password: "{{ lookup('env','JENKINS_PASSWORD') }}"
+       url: "{{ lookup('env','JENKINS_URL') }}"
+       enabled: yes
