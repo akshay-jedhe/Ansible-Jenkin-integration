@@ -1,0 +1,11 @@
+---
+- name: install jenkins plugin
+  hosts: Jenkins-Server
+  tasks:
+  - name: jenkins plugin installation
+    jenkins_plugin:
+        name: CCM
+        url: "{{ lookup('env','JENKINS_URL')}}"
+        url_username: "{{ lookup('env','JENKINS_USER')}}"
+        url_password: "{{ lookup('env','JENKINS_PASSWORD')}}"
+

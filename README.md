@@ -1,2 +1,2 @@
 # Ansible-Jenkin-integration.
-Getting All the information of Specific  currently available job in jenkins.
+ Install the required  jenkins plugins using Jenkins_plugin module.
