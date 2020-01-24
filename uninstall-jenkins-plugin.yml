@@ -1,10 +1,11 @@
 ---
-- name: install jenkins plugin
+- name: uninstall jenkins plugin
   hosts: Jenkins-Server
   tasks:
-  - name: jenkins plugin installation
+  - name: jenkins plugin uninstallation
     jenkins_plugin:
-        name: CCM
+        name: JClouds
+        state: absent
         url: "{{ lookup('env','JENKINS_URL')}}"
         url_username: "{{ lookup('env','JENKINS_USER')}}"
         url_password: "{{ lookup('env','JENKINS_PASSWORD')}}"
